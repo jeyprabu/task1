@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Namma Ooru Taxi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/image/favicon.png">
+        <link rel="stylesheet" href="stylesheet/styles.css">
+        <script src="script/javascript.js"></script>
+    </head>
+    <body> 
+        <div class="main">
+            <div class="navbar">
+                <a href="#" class="active">All Vehicles</a>
+                <a href="inspection.html">Inspection Pending</a>
+                <a href="approval.html">Manage Approval</a>
+                <a href="enquiry.html">Document Enquiry</a>
+            </div>
+
+            <div class="box-container">
+                <div class="box1">
+                    <img src="image/car.png" alt="Total vehicles">
+                    <b>Total vehicles</b><br>
+                    <span id="totalVehicles">Loading...</span>
+                    <br> 
+                </div>
+                <div class="box2">
+                    <img src="image/car.png" alt="Active vehicles">
+                    <b>Active vehicles</b><br>
+                    <span id="Active vehicles">Loading...</span>
+                    <br> 
+                </div>
+                <div class="box3">
+                    <img src="image/car.png" alt="Inactive vehicles">
+                    <b>Inactive vehicles</b><br>
+                    <span id="Inactive vehicles">Loading...</span>
+                    <br> 
+                </div>
+                <div class="box4">
+                    <img src="image/car.png" alt="Idle vehicles">
+                    <b>Idle vehicles</b><br>
+                    <span id="Idle vehicles">Loading...</span>
+                    <br> 
+                </div>
+                <div class="box5">
+                    <img src="image/car.png" alt="Vehicle Approval Pending">
+                    <b>Vehicle Approval Pending</b><br>
+                    <span id="Vehicle Approval Pending">Loading...</span>
+                    <br> 
+                </div>
+                <div class="box6">
+                    <img src="image/car.png" alt="Vehicle Approval Rejected">
+                    <b>Vehicle Approval Rejected</b><br>
+                    <span id="Vehicle Approval Rejected">Loading...</span>
+                    <br> 
+                </div>
+            </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <select id="inspectionStatus">
+                <option value="">Inspection Status</option>
+                <option value="pending">Pending</option>
+                <option value="inspected">Inspected</option>
+                <option value="client-approved">Client Approved</option>
+                <option value="rejected">Rejected</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+            <select id="vehicleState">
+                <option value="">Vehicle State</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="idle">Idle</option>
+                <option value="temporarily-blocked">Temporarily Blocked</option>
+                <option value="permanently-locked">Permanently Locked</option>
+            </select>
+            <select id="dateRange">
+                <option value="">Date Range</option>
+                <option value="today">Today</option>
+                <option value="this-week">This Week</option>
+                <option value="this-month">This Month</option>
+                <option value="custom">Custom</option>
+            </select>
+            <select id="vehicleType">
+                <option value="">Type</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="truck">Truck</option>
+                <option value="van">Van</option>
+            </select>
+            <select id="engaged">
+                <option value="">Engaged</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <button id="searchButton">Search</button>
+            <button id="addVehicleButton"> + Add New Vehicle</button>
+        </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Sl No</th>
+                        <th>Registration Number</th>
+                        <th>Vehicle ID</th>
+                        <th>Type</th>
+                        <th>Owner Name</th>
+                        <th>Phone Number</th>
+                        <th>Email Address</th>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Engaged</th>
+                        <th>Registration Date</th>
+                        <th>Registration Status</th>
+                        <th>Vehicle State</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#"><img src="image/dashboard.png" height="20px" width="20px"> Dashboard</a></li>
+                <li><a href="#"><img src="image/stream.png" height="20px" width="20px">Live Tracking</a></li>
+                <li><a href="#"><img src="image/driver.png" height="20px" width="20px">Driver Management</a></li>
+                <li><a href="#"><img src="image/vehicle.png" height="20px" width="20px">Vehicle Management</a></li>
+                <li><a href="#"><img src="image/rides.png" height="20px" width="20px">Manage rides</a></li>
+                <li><a href="#"><img src="image/employee.png" height="20px" width="20px">Employees</a></li>
+                <li><a href="#"><img src="image/clients.png" height="20px" width="20px"> Clients</a></li>
+                <li><a href="#"><img src="image/history.png" height="20px" width="20px">Trip History</a></li>
+                <li><a href="#"><img src="image/payment.png" height="20px" width="20px">Payments</a></li>
+                <li><a href="#"><img src="image/report.png" height="20px" width="20px">Reports</a></li>
+                <li><a href="#"><img src="image/fare.png" height="20px" width="20px">Fare Database</a></li>
+                <li><a href="#"><img src="image/tickets.png" height="20px" width="20px">Support Tickets</a></li>
+                <li><a href="#"><img src="image/settings.png" height="20px" width="20px">Settings</a></li>
+            </ul>
+        </div>
+        <div class="notlogo"><img src="image/not.png"></div>
+        <div class="top-header">
+            <div class="text">
+                Vehicle Management
+            </div>
+        </div>      
+    </body>
+</html>
